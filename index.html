@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Barbershop</title>
-      <link rel="stylesheet" href=".\css\style.css">
-	<link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="..\css\style.css">
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/days-sans-black" rel="stylesheet">
   </head>
@@ -46,12 +46,12 @@
   <div class="info" id="info">
     <h2 class="head-main">О НАС</h2>
     <div class="cor">
-    <div class="circle">
+    <a class="circle" href="https://vk.com/dimapalaguta" data-title="Палуга Дмитрий Иванович">
       <div class="logo"></div>
-      <div class="text">
+      <div class="text ">
           <p>DIP BARBERSHOP - DIP BARBERSHOP - DIP BARBERSHOP - DIP BARBERSHOP  - DIP BARBERSHOP       </p>
       </div>
-      </div>  
+      </a>  
       <script>
         const text = document.querySelector(".text p");
         text.innerHTML = text.innerText.split("").map((letter, i) =>
@@ -104,9 +104,9 @@
        <br> услуги</h3>
       </div>
       <div class="wrapper-cur">
-       <a href="" class="price-cur"><p class="usluga">1хБритьё головы</p> <p class="price">25 BYN</p></a>
-       <a href="" class="price-cur"><p class="usluga">1хБритьё бороды</p> <p class="price">25 BYN</p></a>
-       <a href="" class="price-cur"><p class="usluga">1хСтрижка головы</p> <p class="price">30 BYN</p></a>
+       <a href="" class="price-cur" data-title="Выполняется шаветом  «До блеска» после распаривания"><p class="usluga">1хБритьё головы</p> <p class="price">25 BYN</p></a>
+       <a href="" class="price-cur" data-title="Выполняется шаветом  «До блеска» после распаривания"><p class="usluga">1хБритьё бороды</p> <p class="price">25 BYN</p></a>
+       <a href="" class="price-cur" data-title="Выполняется машинкой, ножницами + бритьё шаветом с распариванием..."><p class="usluga">1хСтрижка головы</p> <p class="price">30 BYN</p></a>
        <a href="" class="price-cur border-usluga "><p class="usluga ">1хКоррекция бороды и усов</p> <p class="price">30 BYN</p></a>
       </div>
       </div>

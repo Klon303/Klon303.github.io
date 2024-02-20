@@ -29,6 +29,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative; /* Относительное позиционирование */
+}
+
+.price-cur:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute;
+    left: 100px; right:0x; bottom: -60px; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background-color: black; /* Полупрозрачный цвет фона */
+    background-image: url(/img/back-slick.png);
+    color: #fff; /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 11px; /* Размер текста подсказки */
+    padding: 15px 10px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
+    border-radius: 11px;
+    width: 50%;
 }
 .wrapper-cur{
     padding-top: 15px;

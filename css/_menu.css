@@ -10,7 +10,8 @@
 header {
   padding-top: 45px;
   padding-bottom: 45px;
-  background-color:rgba(252, 208, 1, 1);
+  background-image: url(/img/fone.png);
+  background-color:#000000;
 
 }
 
@@ -37,7 +38,7 @@ header {
 }
 
 .link-dip{
-  color: #000000;
+  color: white;
   font-weight: 700;
 }
 .Profi{
@@ -51,7 +52,7 @@ header {
   margin-bottom: 53px;
   font-family: Days Sans Black;
   font-weight: 400;
-  color: #000000;
+  color: white;
   font-size: 64px;
   line-height: 74px;
 }
