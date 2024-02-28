@@ -1,12 +1,40 @@
-.head{
-    display: flex;
+.backgraund-head{
+  background:no-repeat;
+  background-image:url(/img/fone-head.png);
+  background-size:100% 100%;
 }
+
+.nav-click{
+  text-align: center;
+  padding-top: 60px;
+  font-family: days sans black;
+  font-size: 36px;
+}
+
+.o-nas{
+  background-image: url(/img/fon.png);
+
+}
+.head{
+  display: flex;
+}
+
 .info{
     width: 50%;
     padding-top: 63px;
+    background:no-repeat;
 }
 .slider-card{
     width: 50%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.video {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .slider {
@@ -97,17 +125,13 @@
 }
 
 .center {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  background: #333;
+  height: 650px;
+  margin: 0 auto;
 }
 
 .slider {
   height: 100%;
-  width: 100%;
+  width: 625px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 .slider__slide:nth-child(1) {
@@ -120,12 +144,13 @@
 }
 .slider__slide:nth-child(3) {
   background-image:url(/img/foto3.png) ;
-  background-size: 100% 100%;
+   background-size: 100% 100%;
 }
 .slider__slide:nth-child(4) {
   background-image:url(/img/foto4.png) ;
   background-size: 100% 100%;
-}
+  }
+
 .slider__slide:nth-child(5) {
   background-image:url(/img/foto5.png) ;
   background-size: 100% 100%;
@@ -142,27 +167,28 @@
     font-size: 48px;
     line-height: 55px;
     color: black;
-    margin-bottom: 55px;
+    margin-bottom: 100px;
   }
 
   .cor {
    display: flex;
-   justify-content: center;
+   justify-content: space-around;
    margin-bottom: 50px;
+   padding-left: 20%;
   }
   .card{
     display: flex;
     justify-content: center;
+    padding-left: 20%;
 }
   .card-wrapper {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
-    background-color:white;
-    max-width: 665px;
-    border: solid 2px black;
+    padding: 60px;
+    max-width: 565px;
     border-radius: 11px;
+    border: 3px solid black;
   }
 
   .text-card {
@@ -184,10 +210,12 @@
 
 .logo{
     position: absolute;/*абсолютное позиционирование*/
-    width: 400px;
-    height: 400px;     background: url(/img/foto.png);/*изображение*/
+    top:80px;
+    width: 388px;
+    height: 540px;     background: url(/img/logo.png);/*изображение*/
     background-size: cover;/*картинка пропорционально растянута на весь блок*/
     border-radius: 50%;
+    z-index: 1;
 }
 
 .text {
@@ -197,24 +225,9 @@
     height: 100%;
     cursor: pointer;
     animation: animate 30s linear infinite;/*свойства анимации*/
-}
+  }
 
-.circle:hover::after {
-  content: attr(data-title); /* Выводим текст */
-  position: absolute;
-  left: 100px; right:0x; bottom: -60px; /* Положение подсказки */
-  z-index: 1; /* Отображаем подсказку поверх других элементов */
-  background-color: black; /* Полупрозрачный цвет фона */
-  background-image: url(/img/back-slick.png);
-  color: #fff; /* Цвет текста */
-  text-align: center; /* Выравнивание текста по центру */
-  font-family: Arial, sans-serif; /* Гарнитура шрифта */
-  font-size: 11px; /* Размер текста подсказки */
-  padding: 15px 10px; /* Поля */
-  border: 1px solid #333; /* Параметры рамки */
-  border-radius: 11px;
-  width: 50%;
-}
+
 
 p {
     margin: 0;
@@ -223,8 +236,9 @@ p span {
     position: absolute;
     left: 50%;/*позиция слева*/
     font-family: Anonymous Pro;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 700;
     color: black;
     text-transform: uppercase;/*большие буквы*/
     transform-origin: 0 260px;/*точка исхода трансформации*/
@@ -252,6 +266,75 @@ gap: 100px;
   }
   .slider-card{
       width: 100%;
-      height: 550px;
   }
+  .cor {
+    padding-left: 0;
+   }
+   .card {
+    padding-left: 0;
+   }
+   .head{
+    gap:0px;
+   }
+.video{
+  margin-bottom: 100px;
+}
+}
+
+.backgraund-zap{
+  background-image: url(/img/zap-fone.png) 
+}
+
+.zap{
+  background-image: url(/img/fon.png) ;
+  display: block;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.zap-main{
+  font-family: days-sans-black;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.zap-text {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.zap-button{
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.button-black{
+  font-family: Roboto;
+  padding: 10px 40px ;
+  font-weight: 400;
+  border-radius:100px;
+  font-size: 36px;
+  color:white;
+  background-color:black;
+  transition: 1s;
+}
+
+.button-black:hover{
+  background-color:orange;
+}
+
+.button-orange{
+  font-family: Roboto;
+  border-radius:100px;
+  font-size: 20px;
+  border:solid 1px black;
+  color:black;
+  padding: 10px 30px ;
+  transition: 1s;
+}
+
+.button-orange:hover{
+  background-color:orange;
 }
