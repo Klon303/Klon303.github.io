@@ -26,7 +26,8 @@ html {
     overflow-x: hidden;
     margin: 0;
     min-width: 320px;
-    background-image: url(/img/Fon-main.png);  }
+    background-color:white;
+  }
   
   .reset-list {
     padding: 0;
@@ -45,4 +46,12 @@ html {
     padding-left: 50px;
     padding-right: 50px;
     max-width: 1870px;
+    background-color:black;
+}
+
+@media (max-width: 800px){
+    .container {
+      padding-left: 25px;
+    padding-right: 25px;
+    }
 }
