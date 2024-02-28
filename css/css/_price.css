@@ -1,0 +1,116 @@
+.backgraund-price{
+    background:no-repeat;
+    background-image:url(/img/Fone-price.png);
+    background-size: 100% 100%;
+}
+
+.uslugi-price{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100%;
+    width: 100%;
+}
+
+.price-main{
+    color:black;
+    margin-bottom: 0px;
+    
+}
+.price-wrapper{
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.price-card{
+    width: 550px;
+    height: 950px;
+    padding-top: 20px;
+    padding: 50px;
+    padding-top: 200px;
+}
+
+.card_1{
+    background:no-repeat;
+    background-image: url(/img/check_12.png);
+    background-size: 550px 920px;}
+
+.card_2{
+    background:no-repeat;
+    background-image: url(/img/check_1.png);
+    background-size: 550px 920px;
+}
+
+
+.card_3{
+    background:no-repeat;
+    background-image: url(/img/check3.png);
+    background-size: 550px 920px;
+}
+
+.price-cur{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Относительное позиционирование */
+}
+
+.price-cur:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute;
+    left: 100px; right:0x; bottom: -60px; /* Положение подсказки */
+    z-index: 1; 
+    background-color: black;
+    color: white; /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 14px; /* Размер текста подсказки */
+    padding: 15px 10px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
+    border-radius: 11px;
+    width: 50%;
+}
+.wrapper-cur{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding-bottom: 10px;
+}
+
+.uslugi{
+    text-align: center;
+    font-family: Anonymous Pro;
+    font-weight: 700;
+    color: black;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom:50px;
+}
+
+.usluga{
+    font-family: Roboto;
+    font-weight: 400;
+    color: black;
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 300px;
+}
+
+.price {
+    font-family: Roboto;
+    font-weight: 700;
+    color: black;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+
+@media (max-width: 1300px){
+    .price-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+}
